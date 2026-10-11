@@ -30,22 +30,21 @@ const PRODUCTS = [
     id: 1,
     name: 'قهوة تركي',
     category: 'hot',
-    price: 80,
+    price: 30,
     image: 'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&q=80',
     description: 'قهوة تركية أصيلة محضرة بعناية فائقة.',
     inStock: true,
     isBestSeller: true,
     hasSizes: false,
     additions: [
-      { name: 'زيادة سكر / مظبوط', price: 0 },
-      { name: 'وجه زيادة', price: 10 }
+    
     ]
   },
   {
     id: 2,
     name: 'إسبريسو دبل',
     category: 'hot',
-    price: 90,
+    price: 60,
     image: 'https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?auto=format&fit=crop&w=600&q=80',
     description: 'شوت مزدوج من أجود حبوب الإسبريسو المركزة.',
     inStock: true,
@@ -57,27 +56,27 @@ const PRODUCTS = [
     id: 3,
     name: 'لاتيه',
     category: 'hot',
-    price: 80,
+    price: 70,
     image: 'https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?auto=format&fit=crop&w=600&q=80',
     description: 'مزيج رائع من الإسبريسو والحليب المبخر برغوة ناعمة.',
     inStock: true,
     isBestSeller: true,
     hasSizes: true,
     sizes: [
-      { name: 'عادي', price: 80 },
-      { name: 'كبير', price: 100 }
+      { name: 'عادي', price: 70 },
+      { name: 'كبير', price: 110 }
     ],
     additions: [
-      { name: 'نكهة فانيليا / كاراميل', price: 15 }
+      { name: 'نكهة فانيليا / كاراميل', price: 25 }
     ]
   },
   {
     id: 4,
     name: 'كابتشينو',
     category: 'hot',
-    price: 80,
+    price: 70,
     image: 'https://images.unsplash.com/photo-1534778101976-62847782c213?auto=format&fit=crop&w=600&q=80',
-    description: 'إسبريسو غني مع طبقة متساوية من الحليب ورغوة الكابتشينو الفاخرة.',
+    description: 'إسبريسو غني مع طبقة متساوية من الحليب ورغوة الكابتشينو .',
     inStock: true,
     isBestSeller: false,
     hasSizes: false,
@@ -87,9 +86,9 @@ const PRODUCTS = [
     id: 5,
     name: 'سبانيش لاتيه',
     category: 'hot',
-    price: 90,
+    price: 80,
     image: 'https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=600&q=80',
-    description: 'إسبريسو مع الحليب المكثف المحلى الدافئ لطعم لا يُقاوم.',
+    description: 'إسبريسو مع الحليب المكثف المحلى .',
     inStock: true,
     isBestSeller: true,
     hasSizes: false,
@@ -99,14 +98,14 @@ const PRODUCTS = [
     id: 6,
     name: 'هوت شوكليت',
     category: 'hot',
-    price: 40,
+    price: 60,
     image: 'https://images.unsplash.com/photo-1542990253-0d0f5be5f0ed?auto=format&fit=crop&w=600&q=80',
-    description: 'شوكولاتة ساخنة غنية ودافئة.',
+    description: 'شوكولاتة ساخنة .',
     inStock: true,
     isBestSeller: false,
     hasSizes: false,
     additions: [
-      { name: 'إضافة مارشميلو', price: 10 }
+    
     ]
   },
 
@@ -127,7 +126,7 @@ const PRODUCTS = [
     id: 8,
     name: 'ايس امريكانو',
     category: 'cold_coffee',
-    price: 80,
+    price: 70,
     image: '/ice-am.jpg',
     description: 'إسبريسو بارد مع الماء والثلج المنعش.',
     inStock: true,
@@ -165,7 +164,7 @@ const PRODUCTS = [
     id: 11,
     name: 'عصير فراولة طازج',
     category: 'smoothie_juice',
-    price: 60,
+    price: 80,
     image: '/st.jpg',
     description: 'عصير فراولة طبيعي 100%.',
     inStock: true,
@@ -179,7 +178,7 @@ const PRODUCTS = [
     id: 12,
     name: 'موهيتو ريدبول',
     category: 'soda_mix',
-    price: 80,
+    price: 90,
     image: 'https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=600&q=80',
     description: 'مشروب طاقة ريدبول مع النعناع والليمون المثلج.',
     inStock: true,
@@ -273,7 +272,7 @@ const PRODUCTS = [
     category: 'matcha',
     price: 80,
     image: 'https://images.unsplash.com/photo-1536256263959-770b48d82b0a?auto=format&fit=crop&w=600&q=80',
-    description: 'ماتشا يابانية أصلية مع الحليب والثلج.',
+    description: 'ماتشا مع الحليب والثلج.',
     inStock: true,
     isBestSeller: true,
     hasSizes: false,
@@ -596,11 +595,11 @@ export default function App() {
                 <Sparkles className="w-3.5 h-3.5" />
                 أهلاً بكم في بودا كافيه
               </div>
-              <h1 className="text-4xl sm:text-6xl lg:text-7xl font-serif font-bold text-[#FDFBF7] leading-tight mb-6">
-                استمتع بألذ مشروب <br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D4B595] via-[#F4E3D0] to-[#C8A27B]">
-                  مصنوعة خصيصاً لأجلك
-                </span>
+              <h1 className="text-3xl sm:text-5xl lg:text-6xl font-serif font-bold text-[#FDFBF7] leading-[1.8] sm:leading-[2] mb-6">
+              استمتع بألذ المشروبات <br className="hidden sm:block" />
+             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D4B595] via-[#F4E3D0] to-[#C8A27B]">
+             مصنوعة خصيصاً لأجلك
+             </span>
               </h1>
               <p className="max-w-2xl mx-auto text-base sm:text-lg text-[#EAE0D6] mb-10 leading-relaxed">
                 وجهتك الأولى لألذ المشروبات الساخنة، المثلجات، الموخيتو، والحلويات الطازجة على مدار اليوم.
@@ -937,7 +936,7 @@ export default function App() {
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 border-t border-[#3A2A20] text-center text-xs text-[#8F7E70]">
-         جميع الحقوق محفوظة © 2026 Boda Cafe. تم التطوير بواسطة عمر اشرف.
+         جميع الحقوق محفوظة © 2026 Boda Cafe.
         </div>
       </footer>
     </div>
