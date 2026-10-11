@@ -597,7 +597,7 @@ export default function App() {
                 أهلاً بكم في بودا كافيه
               </div>
               <h1 className="text-4xl sm:text-6xl lg:text-7xl font-serif font-bold text-[#FDFBF7] leading-tight mb-6">
-                استمتع بألذ رشفة قهوة <br />
+                استمتع بألذ مشروب <br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D4B595] via-[#F4E3D0] to-[#C8A27B]">
                   مصنوعة خصيصاً لأجلك
                 </span>
